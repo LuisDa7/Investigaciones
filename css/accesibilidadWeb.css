@@ -8,9 +8,7 @@ html {
 }
 
 .footer {
-    background-color: rgb(16, 16, 16);
-    border-radius: 15px;
-    border: 2px solid #709c44;
+    background-color: rgb(30, 30, 30);
 }
 
 .grid-container {
@@ -26,7 +24,7 @@ html {
         "main main"
         "fuentes fuentes"
         "footer footer";
-    grid-template-rows: 100px 60px 470px 1000px 100px 100px;
+    grid-template-rows: 100px 60px 470px 2800px 200px 200px;
     grid-template-columns: 34% 65%;
 }
 
@@ -159,18 +157,51 @@ html {
 .main {
     width: 70%;
     margin: 0 auto;
-    .importancia{
+
+    .importancia {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .articleImp{
+
+        .articleImp {
             width: 50%;
         }
-        img{
+
+        img {
             border-radius: 15px;
         }
     }
-    
+
+    .principios {
+        text-align: center;
+        margin-top: 100px;
+        background-color: #282828;
+        border-radius: 15px;
+        padding-top: 10px;
+        margin: 70px auto;
+        width: 920px;
+        .contenedorCartas {
+            display: flex;
+            flex-wrap: wrap;
+
+            article {
+                background-color: #1f1f1f;
+                border-radius: 15px;
+                width: 400px;
+                overflow: hidden;
+                margin: 30px;
+
+                p {
+                    margin: 30px;
+                    a{
+                        text-decoration: none;
+                        color: #709c44;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .imgQueEs {
@@ -191,3 +222,20 @@ html {
     border-radius: 15px;
     align-self: center;
 }
+a{
+    text-decoration: none;
+}
+.fuentes a {
+    color: #709c44;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    a{
+        color: #8ad341;
+    }
+}
+    
+    
