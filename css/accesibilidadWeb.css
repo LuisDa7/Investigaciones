@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(23, 23, 23);
+    background-color: #171717;
     font-family: "Radio Canada Big", sans-serif;
     font-optical-sizing: auto;
     color: rgb(200, 200, 200);
@@ -26,7 +26,7 @@ html {
         "main main"
         "fuentes fuentes"
         "footer footer";
-    grid-template-rows: 100px 60px 470px 500px 100px 100px;
+    grid-template-rows: 100px 60px 470px 1000px 100px 100px;
     grid-template-columns: 34% 65%;
 }
 
@@ -159,6 +159,18 @@ html {
 .main {
     width: 70%;
     margin: 0 auto;
+    .importancia{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .articleImp{
+            width: 50%;
+        }
+        img{
+            border-radius: 15px;
+        }
+    }
+    
 }
 
 .imgQueEs {
@@ -171,6 +183,8 @@ html {
 
 .imgQueEs picture {
     width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .imgQueEs img {
