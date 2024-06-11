@@ -1,0 +1,223 @@
+html {
+    background-color: #171717;
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    color: rgb(200, 200, 200);
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+.footer {
+    background-color: rgb(30, 30, 30);
+}
+
+.grid-container {
+    font-size: 1.2rem;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "slideWrapper"
+        "main"
+        "fuentes"
+        "footer";
+    grid-template-rows: 2% 1.1% 10% auto 4% 4%;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 2px solid #9441d3;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    margin: auto 0;
+    margin-left: 25%;
+}
+
+.slider-wrapper {
+    grid-area: slideWrapper;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.main {
+    grid-area: main;
+    padding: 1rem;
+}
+
+.fuentes {
+    grid-area: fuentes;
+    padding-left: 30px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.header h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding: 1%;
+}
+
+.navbar a div {
+    width: 150px;
+    height: 32px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(112, 112, 112);
+    border: 1px solid rgb(50, 50, 50);
+    text-align: center;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 10px auto;
+}
+
+.navbar a div h2 {
+    margin: 4px 0px 0px 0px;
+}
+
+.navbar a div {
+    transition: border 0.4s ease, filter 0.4s ease, color 0.4s ease;
+}
+
+.navbar a div:hover {
+    filter: drop-shadow(0 0 4px #b141d3);
+    color: rgb(227, 227, 227);
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    /*overflow-x: auto; para aniadir un scroll horizontal para ver las imagenes*/
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 15px;
+}
+
+.slider img {
+    /*el 1 mantiene todas las img del mismo tmnio, 
+    el 0 es para mantener la relacion de aspecto y
+     el 100% para que todas las imagenes inicien con 
+     el tmanio de 100%*/
+    flex: 1 0 100%;
+    /*para q se detenga el scroll por cada img*/
+    scroll-snap-align: start;
+    /*para evitar distorsion*/
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 0.75;
+    transition: opacity 250ms ease;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.main {
+    width: 70%;
+    margin: 2% auto;
+
+    .principios {
+        text-align: center;
+        margin-top: 100px;
+        background-color: #282828;
+        border-radius: 15px;
+        padding-top: 10px;
+        margin: 70px auto;
+        width: 920px;
+        .contenedorCartas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            article {
+                background-color: #1f1f1f;
+                width: 90%;
+                overflow: hidden;
+                border-radius: 15px;
+                margin-bottom: 4%;
+
+                p {
+                    margin: 30px;
+                    a{
+                        text-decoration: none;
+                        color: #74449c;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.definicion, .importancia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 2%;
+}
+.queEs, .importancia-texto{
+    padding: 2%;
+}
+
+.definicion img, .importancia img {
+    border-radius: 15px;
+    align-self: center;
+}
+a{
+    text-decoration: none;
+}
+.fuentes a {
+    color: #9441d3;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    a{
+        color: #9441d3;
+    }
+}
+    
+    
