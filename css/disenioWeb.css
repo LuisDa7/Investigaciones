@@ -153,78 +153,109 @@ html {
 }
 
 .main {
-    width: 70%;
+    width: 80%;
     margin: 2% auto;
 
-    .principios {
-        text-align: center;
-        margin-top: 100px;
-        background-color: #282828;
-        border-radius: 15px;
-        padding-top: 10px;
-        margin: 70px auto;
-        width: 920px;
-        .contenedorCartas {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
+    .container-etapas-consideraciones {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        p{
+            padding: 15px;
+        }
+        .etapas {
+            overflow: hidden;
+            text-align: center;
+            background-color: #FFFFFF;
+            color: #74449c;
+            border-radius: 15px;
+            width: 48%;
             article {
-                background-color: #1f1f1f;
-                width: 90%;
-                overflow: hidden;
-                border-radius: 15px;
-                margin-bottom: 4%;
+                padding: 15px;
+                text-align: center;
+            }
+        }
 
-                p {
-                    margin: 30px;
-                    a{
-                        text-decoration: none;
-                        color: #74449c;
+        .consideraciones {
+            text-align: center;
+            background-color: #282828;
+            border-radius: 15px;
+            padding-top: 10px;
+            width: 48%;
+            height: 100%;
+
+            .contenedorCartas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                article {
+                    background-color: #1f1f1f;
+                    width: 90%;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    margin-bottom: 4%;
+
+                    p {
+                        margin: 30px;
+
+                        a {
+                            text-decoration: none;
+                            color: #74449c;
+                        }
                     }
-                }
-                picture{
-                    display: flex;
-                    background-color: #212121;
-                    width: 100%;
-                    height: auto;
-                    justify-content: center;
+
+                    picture {
+                        display: flex;
+                        background-color: #212121;
+                        width: 100%;
+                        height: auto;
+                        justify-content: center;
+                    }
                 }
             }
         }
     }
-
 }
-.definicion, .importancia{
+
+.definicion,
+.importancia {
     display: flex;
+    background-color: #1f1f1f;
+    border-radius: 15px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 2%;
+    margin: 3% 0;
+    overflow: hidden;
+    picture{
+        display: flex;
+    }
 }
-.queEs, .importancia-texto{
+
+.queEs,
+.importancia-texto {
     padding: 2%;
 }
 
-.definicion img, .importancia img {
-    border-radius: 15px;
-    align-self: center;
-}
-a{
+
+a {
     text-decoration: none;
 }
+
 .fuentes a {
     color: #9441d3;
 }
-.footer{
+
+.footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 100px;
-    a{
+
+    a {
         color: #9441d3;
     }
 }
-    
-    
