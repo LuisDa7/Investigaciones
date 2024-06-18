@@ -24,7 +24,7 @@ html {
         "main"
         "fuentes"
         "footer";
-    grid-template-rows: 2% 1.1% 10% auto 4% 4%;
+    grid-template-rows: 2% 0.85% 7% auto 4% 2%;
 }
 
 .header {
@@ -35,7 +35,7 @@ html {
 .navbar {
     grid-area: navbar;
     display: flex;
-    width: 550px;
+    width: 950px;
     margin: 0 auto;
     border-radius: 30px;
     border: 2px solid #9441d3;
@@ -79,7 +79,7 @@ html {
 }
 
 .navbar a div {
-    width: 150px;
+    width: 160px;
     height: 32px;
     background-color: rgb(50, 50, 50);
     color: rgb(112, 112, 112);
@@ -133,7 +133,7 @@ html {
     display: flex;
     column-gap: 1rem;
     position: absolute;
-    bottom: 5rem;
+    bottom: 4rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -154,7 +154,7 @@ html {
 
 .main {
     width: 80%;
-    margin: 2% auto;
+    margin: 0 auto;
 
     .container-etapas-consideraciones {
         display: flex;
@@ -229,11 +229,17 @@ html {
         margin: 3% auto;
         border-radius: 15px;
         text-align: center;
-
-        ul {
-            width: 35%;
-            list-style: none;
-            padding: 0;
+        .beneficios-card-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1%;
+            justify-content: space-around;
+            .beneficios-card{
+                width: 40%;
+                img{
+                    width: 400px;
+                }
+            }
         }
     }
 }
