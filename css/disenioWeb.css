@@ -161,9 +161,11 @@ html {
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
-        p{
+
+        p {
             padding: 15px;
         }
+
         .etapas {
             overflow: hidden;
             text-align: center;
@@ -171,6 +173,7 @@ html {
             color: #74449c;
             border-radius: 15px;
             width: 48%;
+
             article {
                 padding: 15px;
                 text-align: center;
@@ -181,7 +184,6 @@ html {
             text-align: center;
             background-color: #282828;
             border-radius: 15px;
-            padding-top: 10px;
             width: 48%;
             height: 100%;
 
@@ -217,6 +219,23 @@ html {
             }
         }
     }
+
+    .beneficios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFFFFF;
+        color: #74449c;
+        margin: 3% auto;
+        border-radius: 15px;
+        text-align: center;
+
+        ul {
+            width: 35%;
+            list-style: none;
+            padding: 0;
+        }
+    }
 }
 
 .definicion,
@@ -230,7 +249,8 @@ html {
     width: 100%;
     margin: 3% 0;
     overflow: hidden;
-    picture{
+
+    picture {
         display: flex;
     }
 }
